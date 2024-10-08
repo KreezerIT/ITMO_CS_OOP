@@ -18,7 +18,14 @@ public class Route
 
     public Route(IRouteSections[] listOfRouteSections, double routeLengthInKilometers, IVehicle routeVehicle, double maxPermittedVehicleSpeedOnTheRoute)
     {
-        ArgumentNullException.ThrowIfNull(listOfRouteSections);
+        ArgumentNullException.ThrowIfNull(listOfRouteSections, nameof(listOfRouteSections));
+
+        if (listOfRouteSections.Any(section => section == null))
+        {
+            throw new ArgumentException("Null elements in array", nameof(listOfRouteSections));
+        }
+
+        ArgumentNullException.ThrowIfNull(routeVehicle, nameof(routeVehicle));
 
         ListOfRouteSections = listOfRouteSections;
         RouteLeftDuration = routeLengthInKilometers;

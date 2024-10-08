@@ -27,6 +27,10 @@ public class Train : IVehicle
 
     public Train(double mass, double accuracy, double maxPermittedAppliedPower)
     {
+        ArgumentOutOfRangeException.ThrowIfNegative(mass, nameof(mass));
+        ArgumentOutOfRangeException.ThrowIfNegative(accuracy, nameof(accuracy));
+        ArgumentOutOfRangeException.ThrowIfNegative(maxPermittedAppliedPower, nameof(maxPermittedAppliedPower));
+
         Mass = mass;
         Accuracy = accuracy;
         MaxPermittedAppliedPower = maxPermittedAppliedPower;

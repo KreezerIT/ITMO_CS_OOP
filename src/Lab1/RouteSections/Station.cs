@@ -14,6 +14,9 @@ public class Station : IRouteSections
 
     public Station(double congestionLevel, double maxPermittedAppliedSpeed)
     {
+        ArgumentOutOfRangeException.ThrowIfNegative(congestionLevel, nameof(congestionLevel));
+        ArgumentOutOfRangeException.ThrowIfNegative(maxPermittedAppliedSpeed, nameof(maxPermittedAppliedSpeed));
+
         CongestionLevel = congestionLevel;
         Duration = CongestionLevel * 10;
         MaxPermittedAppliedSpeed = maxPermittedAppliedSpeed;

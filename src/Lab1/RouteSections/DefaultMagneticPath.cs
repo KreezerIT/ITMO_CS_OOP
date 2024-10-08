@@ -8,6 +8,8 @@ public class DefaultMagneticPath : IRouteSections
 
     public DefaultMagneticPath(double duration)
     {
+        ArgumentOutOfRangeException.ThrowIfNegative(duration, nameof(duration));
+
         Duration = duration;
     }
 

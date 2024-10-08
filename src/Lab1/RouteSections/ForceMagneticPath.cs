@@ -10,6 +10,8 @@ public class ForceMagneticPath : IRouteSections
 
     public ForceMagneticPath(double duration, double power)
     {
+        ArgumentOutOfRangeException.ThrowIfNegative(duration, nameof(duration));
+
         Duration = duration;
         Power = power;
     }
