@@ -17,6 +17,10 @@ dotnet_style_qualification_for_property = false:warning
 dotnet_style_qualification_for_method = false:warning
 dotnet_style_qualification_for_event = false:warning
 
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.SA1502.severity = none
+
 dotnet_diagnostic.SA1010.severity = none
 
 dotnet_diagnostic.ide0004.severity = warning
@@ -567,3 +571,20 @@ csharp_wrap_chained_method_calls = chop_if_long
 # ReSharper properties
 resharper_csharp_wrap_after_declaration_lpar = true
 resharper_csharp_wrap_parameters_style = chop_if_long
+
+dotnet_diagnostic.CS1591.severity = none
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CA1034.severity = none
+
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1503.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1601.severity = none
+dotnet_diagnostic.SA1201.severity = none
+dotnet_diagnostic.SA1127.severity = none
+dotnet_diagnostic.SA1128.severity = none
+dotnet_diagnostic.SA1611.severity = none
+dotnet_diagnostic.SA1604.severity = none
+dotnet_diagnostic.SA1629.severity = none
+dotnet_diagnostic.SA1602.severity = none
+dotnet_diagnostic.SA1615.severity = none
