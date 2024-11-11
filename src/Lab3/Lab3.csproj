@@ -4,4 +4,9 @@
         <RootNamespace>Itmo.ObjectOrientedProgramming.Lab3</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Crayon" />
+      <PackageReference Include="Moq" />
+    </ItemGroup>
+
 </Project>
