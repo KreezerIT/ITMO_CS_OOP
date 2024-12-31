@@ -4,4 +4,8 @@
         <RootNamespace>Itmo.ObjectOrientedProgramming.Lab5</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Npgsql" />
+    </ItemGroup>
+
 </Project>
